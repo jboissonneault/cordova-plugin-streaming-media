@@ -123,7 +123,8 @@ MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
 		mVideoView.postDelayed(checkIfPlaying, 0);
 	}
 
-	private void pause() {
+    @Override
+	public void pause() {
 		Log.d(TAG, "Pausing video.");
 		mVideoView.pause();
 	}
